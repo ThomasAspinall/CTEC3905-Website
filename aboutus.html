@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css"/>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>   
+        <script src="assets/js/main.js"></script>
+        
+	</head>
+    
+	<body>
+		
+			<div id="wrapper">
+
+				
+					<header id="header">
+						<div class="inner">
+
+							
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/flower.jpg" alt="" /></span><span class="title">Leicester Flowers</span>
+								</a>
+
+							
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="delivery.html">Delivery Info</a></li>
+						</ul>
+					</nav>
+
+				
+                
+					<div id="main">
+						<div class="inner">
+                            <h1>About Us</h1>
+				                
+                            
+                            <br>Leicester flowers is within the heart of Leicestershire, it has been established by the Glover family since 1998 and has been run by the same family since its establishment.We pride ourselves on selling the highest quality flower, for the best possible price.
+                            
+                            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                            
+                            <div style='overflow:hidden;height:300px;width:600px;'>
+                                
+                                <div id='gmap_canvas' style='height:300px;width:450px;'>
+                                
+                                </div>
+                                
+                                <div>
+                                    <small>
+                                        <a href="http://embedgooglemaps.com">embed google maps
+                                        </a>
+                                    </small>
+                                </div>
+                                
+                                <div>
+                                    <small>
+                                        <a href="http://phplinkdir.com/">free high pr web directory</a>
+                                    </small>
+                                
+                                </div>
+                                
+                                <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                            
+                                </div> <!-- Within this inner div there is a external API added to the page of google maps. This shows the comapnys location within the page.  -->
+                            
+                            <br>
+                            
+                            <script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(52.6416266,-1.1805365999999822),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(52.6416266,-1.1805365999999822)});infowindow = new google.maps.InfoWindow({content:'<strong>Leicester Flowers</strong><br>LE3 6DN<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                            
+                            <!--This is the script that users the google map on the About Us Page-->
+                            <h3>Address</h3>
+                            Leicester Flowers <br> Glenfield Road <br> Leicester <br> LE3 6DN
+                        
+            						</div>               
+					</div>
+                    
+                    
+        
+                    
+        
+				
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow us on Twitter</h2>
+								<ul class="icons">
+									<a href="https://twitter.com/LeicFlowers" target="_blank" class="icon style2 fa-twitter">
+                                            <span class="label">Twitter</span>
+                                    </a>
+								</ul>
+							</section>
+				
+						</div>
+					</footer>
+        </div>
+			
+
+	</body>
+</html>
